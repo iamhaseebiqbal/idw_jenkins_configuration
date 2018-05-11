@@ -110,7 +110,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>Build</string>
         <string>Deploy</string>
-        <string>Develop</string>
+        <string>Download</string>
         <string>Report</string>
         <string>Test</string>
       </jobNames>

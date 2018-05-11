@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.21">
+  <defaultSuffix>@gmail.com</defaultSuffix>
   <hudsonUrl>http://localhost:8080/</hudsonUrl>
   <smtpAuthUsername>haseeb.iqbal29@gmail.com</smtpAuthUsername>
   <smtpAuthPassword>{AQAAABAAAAAQBI3cvYG6xLg+F6ktIpbIx8/zweofyAA1v3CURciHhHM=}</smtpAuthPassword>

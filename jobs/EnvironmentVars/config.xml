@@ -13,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo $_MyServerURL</command>
+      <command>$_MyServerURL</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

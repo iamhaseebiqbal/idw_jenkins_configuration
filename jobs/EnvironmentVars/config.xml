@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -12,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;&lt;a href=&apos;http://localhost:8080/view/Dilivery_Pipeline_View/job/Test/&apos;$BUILD_NUMBER&apos;/console&apos;&gt;PLEASE FIND THE LOG HERE&lt;/a&gt;&quot;</command>
+      <command>echo &quot;&lt;a href=http://localhost:8080/view/Dilivery_Pipeline_View/job/Test/$BUILD_NUMBER/console&gt;PLEASE FIND THE LOG HERE&lt;/a&gt;&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

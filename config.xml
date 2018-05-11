@@ -122,7 +122,7 @@
             <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/listView/jobNames/comparator"/>
           </default>
           <int>1</int>
-          <string>$_MyServerURL</string>
+          <string>_MyServerURL</string>
           <string>https://haseebiqbal.com</string>
         </tree-map>
       </envVars>

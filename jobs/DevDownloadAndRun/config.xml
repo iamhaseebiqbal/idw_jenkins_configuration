@@ -33,7 +33,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;DevDownloadAndRun Building now...&quot;</command>
+      <command>echo &quot;DevDownloadAndRun Building now... and its done&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

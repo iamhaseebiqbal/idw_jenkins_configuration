@@ -45,7 +45,7 @@ mkdir abc</command>
           <logTexts>
             <hudson.plugins.postbuildtask.LogProperties>
               <logText>BUILD FAILED</logText>
-              <operator>OR</operator>
+              <operator>AND</operator>
             </hudson.plugins.postbuildtask.LogProperties>
           </logTexts>
           <EscalateStatus>false</EscalateStatus>

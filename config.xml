@@ -148,7 +148,7 @@
       <updateInterval>2</updateInterval>
       <showChanges>false</showChanges>
       <allowManualTriggers>false</allowManualTriggers>
-      <showTotalBuildTime>false</showTotalBuildTime>
+      <showTotalBuildTime>true</showTotalBuildTime>
       <allowRebuild>true</allowRebuild>
       <allowPipelineStart>true</allowPipelineStart>
       <showDescription>false</showDescription>

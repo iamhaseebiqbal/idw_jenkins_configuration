@@ -121,7 +121,9 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/listView/jobNames/comparator"/>
           </default>
-          <int>1</int>
+          <int>2</int>
+          <string>_MyDynaminURL</string>
+          <string>https://haseebiqbal.com/$BUILD_ID</string>
           <string>_MyServerURL</string>
           <string>https://haseebiqbal.com</string>
         </tree-map>

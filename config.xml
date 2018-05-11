@@ -159,7 +159,7 @@
       <pagingEnabled>false</pagingEnabled>
       <showAggregatedChanges>false</showAggregatedChanges>
       <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
-      <theme>default</theme>
+      <theme>contrast</theme>
       <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
       <regexpFirstJobs/>
       <linkToConsoleLog>false</linkToConsoleLog>

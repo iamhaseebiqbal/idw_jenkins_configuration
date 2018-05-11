@@ -49,7 +49,7 @@ mkdir abc</command>
             </hudson.plugins.postbuildtask.LogProperties>
             <hudson.plugins.postbuildtask.LogProperties>
               <logText>TRUE</logText>
-              <operator>AND</operator>
+              <operator>OR</operator>
             </hudson.plugins.postbuildtask.LogProperties>
           </logTexts>
           <EscalateStatus>false</EscalateStatus>

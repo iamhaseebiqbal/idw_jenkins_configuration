@@ -17,11 +17,37 @@
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.Mailer plugin="mailer@1.21">
-      <recipients>haseeb.iqbal28@gmail.com muhammad.u.shahid@student.fh-kiel.de rabia.hasan@student.fh-kiel.de omowunmi.aderemi@student.fh-kiel.de taha_1414@hotmail.com syeddaniyalasif@gmail.com muthu_ramansv@hotmail.com avazbabayev@gmail.com ha.t.mai@student.fh-kiel.de tarun.mangla@student.fh-kiel.de hamdardvir.singh@student.fh-kiel.de</recipients>
-      <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.62">
+      <recipientList>haseeb.iqbal28@gmail.com,muhammad.u.shahid@student.fh-kiel.de,rabia.hasan@student.fh-kiel.de,omowunmi.aderemi@student.fh-kiel.de,taha_1414@hotmail.com,syeddaniyalasif@gmail.com,muthu_ramansv@hotmail.com,avazbabayev@gmail.com,ha.t.mai@student.fh-kiel.de,tarun.mangla@student.fh-kiel.de,hamdardvir.singh@student.fh-kiel.de</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>default</contentType>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>true</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo>$DEFAULT_REPLYTO</replyTo>
+      <from></from>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>
 </project>

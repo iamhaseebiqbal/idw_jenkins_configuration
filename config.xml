@@ -149,7 +149,7 @@
       <showChanges>false</showChanges>
       <allowManualTriggers>false</allowManualTriggers>
       <showTotalBuildTime>false</showTotalBuildTime>
-      <allowRebuild>false</allowRebuild>
+      <allowRebuild>true</allowRebuild>
       <allowPipelineStart>true</allowPipelineStart>
       <showDescription>false</showDescription>
       <showPromotions>false</showPromotions>

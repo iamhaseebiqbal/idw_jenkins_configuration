@@ -150,7 +150,7 @@
       <allowManualTriggers>false</allowManualTriggers>
       <showTotalBuildTime>false</showTotalBuildTime>
       <allowRebuild>false</allowRebuild>
-      <allowPipelineStart>false</allowPipelineStart>
+      <allowPipelineStart>true</allowPipelineStart>
       <showDescription>false</showDescription>
       <showPromotions>false</showPromotions>
       <showTestResults>false</showTestResults>

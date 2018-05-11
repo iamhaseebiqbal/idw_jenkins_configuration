@@ -9,73 +9,8 @@
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
-    <roleMap type="projectRoles">
-      <role name="Developer" pattern="Dev.*">
-        <permissions>
-          <permission>hudson.model.Item.Cancel</permission>
-          <permission>hudson.model.Item.Build</permission>
-        </permissions>
-        <assignedSIDs/>
-      </role>
-      <role name="Lead" pattern=".*">
-        <permissions>
-          <permission>hudson.model.Item.Cancel</permission>
-          <permission>hudson.model.Item.Delete</permission>
-          <permission>hudson.model.Item.Create</permission>
-          <permission>hudson.model.Item.Build</permission>
-          <permission>hudson.model.Item.Configure</permission>
-        </permissions>
-        <assignedSIDs/>
-      </role>
-    </roleMap>
-    <roleMap type="globalRoles">
-      <role name="Employee" pattern=".*">
-        <permissions>
-          <permission>hudson.model.Hudson.Read</permission>
-        </permissions>
-        <assignedSIDs/>
-      </role>
-      <role name="admin" pattern=".*">
-        <permissions>
-          <permission>hudson.model.View.Delete</permission>
-          <permission>hudson.model.Computer.Connect</permission>
-          <permission>hudson.model.Run.Delete</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains</permission>
-          <permission>hudson.model.Computer.Create</permission>
-          <permission>hudson.model.View.Configure</permission>
-          <permission>hudson.model.Computer.Build</permission>
-          <permission>hudson.model.Item.Configure</permission>
-          <permission>hudson.model.Hudson.Administer</permission>
-          <permission>hudson.model.Item.Cancel</permission>
-          <permission>hudson.model.Item.Read</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
-          <permission>hudson.model.Computer.Delete</permission>
-          <permission>hudson.model.Item.Build</permission>
-          <permission>hudson.scm.SCM.Tag</permission>
-          <permission>hudson.model.Item.Move</permission>
-          <permission>hudson.model.Item.Discover</permission>
-          <permission>hudson.model.Hudson.Read</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update</permission>
-          <permission>hudson.model.Item.Create</permission>
-          <permission>hudson.model.Item.Workspace</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete</permission>
-          <permission>hudson.model.Computer.Provision</permission>
-          <permission>hudson.model.Run.Replay</permission>
-          <permission>hudson.model.View.Read</permission>
-          <permission>hudson.model.View.Create</permission>
-          <permission>hudson.model.Item.Delete</permission>
-          <permission>hudson.model.Computer.Configure</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create</permission>
-          <permission>hudson.model.Computer.Disconnect</permission>
-          <permission>hudson.model.Run.Update</permission>
-        </permissions>
-        <assignedSIDs>
-          <sid>admin</sid>
-        </assignedSIDs>
-      </role>
-    </roleMap>
-    <roleMap type="slaveRoles"/>
+  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
+    <denyAnonymousReadAccess>false</denyAnonymousReadAccess>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
@@ -129,6 +64,7 @@
     <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.1.1">
       <owner class="hudson" reference="../../.."/>
       <name>Pipeline_Visual_Representation</name>
+      <description></description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
@@ -163,7 +99,7 @@
       <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
       <regexpFirstJobs/>
       <linkToConsoleLog>false</linkToConsoleLog>
-      <description></description>
+      <description defined-in="se.diabol.jenkins.pipeline.DeliveryPipelineView"></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
   </views>
   <primaryView>all</primaryView>

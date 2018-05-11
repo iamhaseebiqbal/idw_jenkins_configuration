@@ -24,9 +24,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Testing started...&quot;
-mkdir abc
-mkdir abc</command>
+      <command>echo &quot;Testing started...&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -39,21 +37,6 @@ mkdir abc</command>
         <completeBuild>true</completeBuild>
       </threshold>
     </hudson.tasks.BuildTrigger>
-    <hudson.plugins.postbuildtask.PostbuildTask plugin="postbuild-task@1.8">
-      <tasks>
-        <hudson.plugins.postbuildtask.TaskProperties>
-          <logTexts>
-            <hudson.plugins.postbuildtask.LogProperties>
-              <logText>Finished: FAILURE</logText>
-              <operator>AND</operator>
-            </hudson.plugins.postbuildtask.LogProperties>
-          </logTexts>
-          <EscalateStatus>false</EscalateStatus>
-          <RunIfJobSuccessful>false</RunIfJobSuccessful>
-          <script>echo &quot;Test Failed&quot;</script>
-        </hudson.plugins.postbuildtask.TaskProperties>
-      </tasks>
-    </hudson.plugins.postbuildtask.PostbuildTask>
   </publishers>
   <buildWrappers/>
 </project>

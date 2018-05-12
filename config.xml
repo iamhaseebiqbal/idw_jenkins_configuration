@@ -64,7 +64,6 @@
     <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.1.1">
       <owner class="hudson" reference="../../.."/>
       <name>Pipeline_Visual_Representation</name>
-      <description></description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
@@ -99,7 +98,7 @@
       <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
       <regexpFirstJobs/>
       <linkToConsoleLog>false</linkToConsoleLog>
-      <description defined-in="se.diabol.jenkins.pipeline.DeliveryPipelineView"></description>
+      <description></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
   </views>
   <primaryView>all</primaryView>
